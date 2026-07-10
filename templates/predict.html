@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brain Stroke Prediction</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/predict.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Brain Stroke Prediction</h1>
+
+<form action="/result" method="POST">
+
+<input type="text" name="name" placeholder="Patient Name" required>
+
+<select name="gender" required>
+<option value="">Select Gender</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select>
+
+<input type="number" name="age" placeholder="Age" required>
+
+<select name="hypertension" required>
+<option value="">Hypertension</option>
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+
+<select name="heart_disease" required>
+<option value="">Heart Disease</option>
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select>
+
+<select name="ever_married" required>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select>
+
+<select name="work_type" required>
+<option value="Private">Private</option>
+<option value="Self-employed">Self-employed</option>
+<option value="Govt_job">Govt Job</option>
+<option value="children">Children</option>
+<option value="Never_worked">Never Worked</option>
+</select>
+
+<select name="Residence_type" required>
+<option value="Urban">Urban</option>
+<option value="Rural">Rural</option>
+</select>
+
+<input
+type="number"
+step="0.01"
+name="avg_glucose_level"
+placeholder="Average Glucose Level"
+required>
+
+<input
+type="number"
+step="0.1"
+name="bmi"
+placeholder="BMI"
+required>
+
+<select name="smoking_status" required>
+<option value="formerly smoked">Formerly Smoked</option>
+<option value="never smoked">Never Smoked</option>
+<option value="smokes">Smokes</option>
+<option value="Unknown">Unknown</option>
+</select>
+
+<button type="submit">
+Predict Stroke Risk
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

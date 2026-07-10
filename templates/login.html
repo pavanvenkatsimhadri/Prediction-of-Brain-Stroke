@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brain Stroke Prediction</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/login.css') }}">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <h1>🧠 Brain Stroke Prediction</h1>
+
+        <p>
+            AI Based Brain Stroke Prediction System
+        </p>
+
+        <img src="{{ url_for('static', filename='images/doctor.png') }}">
+
+    </div>
+
+
+    <div class="right">
+
+        <form action="/login" method="POST">
+
+            <h2>Welcome Back</h2>
+
+            <p>Please Login</p>
+
+            <div class="input-box">
+
+                <i class="fa fa-user"></i>
+
+                <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa fa-lock"></i>
+
+                <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                required>
+
+            </div>
+
+            <button>
+
+                Login
+
+            </button>
+
+            <div class="demo">
+
+                Demo Login
+
+                <br><br>
+
+                Username : <b>admin</b>
+
+                <br>
+
+                Password : <b>admin123</b>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

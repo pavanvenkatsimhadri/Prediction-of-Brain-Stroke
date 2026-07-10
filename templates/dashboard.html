@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+
+        🧠 Brain Stroke Prediction
+
+    </div>
+
+    <ul>
+
+        <li><a href="/dashboard">Home</a></li>
+
+        <li><a href="/predict">Prediction</a></li>
+
+        <li><a href="/logout">Logout</a></li>
+
+    </ul>
+
+</nav>
+
+
+<section class="hero">
+
+    <div class="content">
+
+        <h1>
+
+            AI Powered Brain Stroke Prediction
+
+        </h1>
+
+        <p>
+
+            Predict the risk of stroke using Machine Learning.
+            This project helps identify stroke risk based on
+            patient health information.
+
+        </p>
+
+        <a href="/predict">
+
+            <button>
+
+                Start Prediction
+
+            </button>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="cards">
+
+    <div class="card">
+
+        <i class="fa-solid fa-brain"></i>
+
+        <h2>AI Prediction</h2>
+
+        <p>
+
+            Predict stroke risk with Machine Learning.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        <h2>Health Analysis</h2>
+
+        <p>
+
+            Analyze patient health factors instantly.
+
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-file-medical"></i>
+
+        <h2>PDF Report</h2>
+
+        <p>
+
+            Download prediction results as a PDF.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="about">
+
+<h2>About the Project</h2>
+
+<p>
+
+Brain Stroke Prediction is a Machine Learning based web
+application developed using Python Flask.
+
+The system predicts whether a patient has a low,
+medium or high risk of stroke based on their
+health information.
+
+No user data is stored in a database.
+
+The prediction is performed instantly and can
+be downloaded as a report.
+
+</p>
+
+</section>
+
+<footer>
+
+Developed for MCA PG Final Year Project
+
+</footer>
+
+</body>
+
+</html>

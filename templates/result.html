@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prediction Result</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/result.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🧠 Brain Stroke Prediction Result</h1>
+
+    <div class="result-card">
+
+        <h2>{{ patient }}</h2>
+
+        <h3>Risk Percentage</h3>
+
+        <div class="circle {{ color }}">
+
+            {{ risk }}%
+
+        </div>
+
+        <h2>{{ level }}</h2>
+
+    </div>
+
+    <div class="details">
+
+        <table>
+
+            <tr>
+                <th>Patient Name</th>
+                <td>{{ patient }}</td>
+            </tr>
+
+            <tr>
+                <th>Age</th>
+                <td>{{ age }}</td>
+            </tr>
+
+            <tr>
+                <th>Gender</th>
+                <td>{{ gender }}</td>
+            </tr>
+
+            <tr>
+                <th>Risk</th>
+                <td>{{ risk }}%</td>
+            </tr>
+
+            <tr>
+                <th>Status</th>
+                <td>{{ level }}</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="tips">
+
+        <h2>Health Suggestions</h2>
+
+        <ul>
+
+            <li>✔ Maintain a healthy diet.</li>
+
+            <li>✔ Exercise at least 30 minutes daily.</li>
+
+            <li>✔ Avoid smoking and alcohol.</li>
+
+            <li>✔ Monitor blood pressure regularly.</li>
+
+            <li>✔ Maintain a healthy BMI.</li>
+
+            <li>✔ Visit your doctor for regular checkups.</li>
+
+        </ul>
+
+    </div>
+
+    <div class="buttons">
+
+        <a href="/predict">
+
+            <button class="blue">
+
+                Predict Again
+
+            </button>
+
+        </a>
+
+        <a href="/download">
+
+            <button class="green">
+
+                Download PDF
+
+            </button>
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
